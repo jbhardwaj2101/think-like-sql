@@ -8,14 +8,14 @@ Stop memorizing query templates. Learn to reason about output grain, joins, NULL
 
 ## Start here
 
-1. **Download the practice files:** `practice/practice.sqlite` and `practice/practice.py` from this repository (or download the full repository ZIP from GitHub's **Code → Download ZIP**).
-2. **Install Python 3** if needed. Open Terminal or PowerShell in the folder containing both files.
+1. **Download the practice files:** `practice/practice.py` and `practice/seed.sql` from this repository (or download the full repository ZIP from GitHub's **Code → Download ZIP**).
+2. **Install Python 3** if needed. Open Terminal or PowerShell in the `practice` folder containing both files.
 3. **Launch:** `python practice.py` (macOS may require `python3 practice.py`).
 4. **Test:** enter `SELECT name, salary FROM employees ORDER BY name;` and press Enter.
 5. **Read:** [the complete self-study book](book/How_SQL_Thinks.md). Work through THINK → DO → REMIX → LEVEL UP → SELF-GRADE.
 6. **Check answers only after attempting the exercises:** [Answer key](book/Answer_Key.md).
 
-You can also open `practice.sqlite` with DB Browser for SQLite and use its Execute SQL tab.
+On first launch the runner creates `practice.sqlite` automatically from `seed.sql`. You can also open `practice.sqlite` with DB Browser for SQLite and use its Execute SQL tab.
 
 ## The five-question method
 
