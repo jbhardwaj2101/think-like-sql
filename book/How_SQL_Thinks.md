@@ -4,9 +4,9 @@
 
 **Promise:** You will spend more time writing queries than reading explanations.
 
-**Getting started:** Install Python 3, download `practice.sqlite` and `practice.py` into the same directory, and run `python practice.py`. Alternatively, open the database in DB Browser for SQLite. No server or paid account is needed. Type SQL ending in `;`; type `quit` to exit.
+**Getting started:** Install Python 3, download `seed.sql` and `practice.py` into the same directory, and run `python practice.py`. Alternatively, open the database in DB Browser for SQLite. No server or paid account is needed. Type SQL ending in `;`; type `quit` to exit.
 
-**How to use:** Open `practice.sqlite` in any SQLite client (or run `python practice.py`). Read the mental model, predict the result, run the example, then solve the remix without looking at the answer. Each lab takes roughly 10–20 minutes.
+**How to use:** Run `python practice.py` to create `practice.sqlite` automatically from `seed.sql`, or open the generated database in any SQLite client. Read the mental model, predict the result, run the example, then solve the remix without looking at the answer. Each lab takes roughly 10–20 minutes.
 
 **The five-question method:**
 1. OUTPUT — What should one row represent?
@@ -27,7 +27,7 @@
 
 ## START HERE — Real setup instructions
 
-**1. Download and extract the ZIP.** Keep `practice.py` and `practice.sqlite` in the same folder. You do not need a paid account or SQL server.
+**1. Download and extract the ZIP.** Keep `practice.py` and `seed.sql` in the same folder. You do not need a paid account or SQL server.
 
 **2. Open a terminal in that folder.** On Windows, open PowerShell; on macOS, open Terminal. Run `python --version`. If macOS says command not found, try `python3 --version`. Install Python 3 if needed.
 
@@ -37,7 +37,7 @@
 
 **5. Study one lab at a time.** Predict the row count, run DO, solve REMIX and LEVEL UP, and only then open the separate answer key.
 
-**If stuck:** A `...>` prompt means you need a semicolon. `No such table` means you are using the wrong database. You can also open `practice.sqlite` in DB Browser for SQLite and run queries in the Execute SQL tab. To reset your data, extract a fresh copy of the database.
+**If stuck:** A `...>` prompt means you need a semicolon. `No such table` means you are using the wrong database. You can also open `practice.sqlite` in DB Browser for SQLite and run queries in the Execute SQL tab. To reset your data, delete `practice.sqlite` and run `python practice.py` again.
 
 ## THE FIVE-QUESTION METHOD — A worked example
 
