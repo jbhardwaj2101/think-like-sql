@@ -1,0 +1,24 @@
+name: Publish How SQL Thinks v1.0.0
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/publish-book.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install reportlab
+      - run: python scripts/build_release.py
+      - name: Publish downloadable PDFs and ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create v1.0.0 dist/How_SQL_Thinks_Reader.pdf dist/How_SQL_Thinks_Answer_Key.pdf dist/How_SQL_Thinks_Complete_Package.zip --title "How SQL Thinks — Self-Study Edition 1.0" --notes "Free exercise-first SQL self-study guide by Jagjot Bhardwaj. Includes 12 labs, an answer key, a SQLite dataset, and a Python practice runner." --latest
